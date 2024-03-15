@@ -6,13 +6,13 @@ linkedlist * new_list(size_t size) {
     list->head = rawmem;
 
     node * current = rawmem;
-    current->value = 0;
+    current->value = NULL;
 
     for(size_t i = 1; i < size; ++i) {
         current->next = current + 1;
         current = current + 1;
         current->prev = current - 1;
-        current->value = (int)i;
+        current->value = NULL;
     }
 
     current->next = NULL;
