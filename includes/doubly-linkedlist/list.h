@@ -15,5 +15,6 @@ typedef struct linkedlist {
     size_t size;
 } linkedlist;
 
+linkedlist * new_list(size_t size);
 
 #endif // DOUBLY_LINKEDLIST
