@@ -8,7 +8,7 @@ int main() {
 
     node * current = list->head;
     while (current != NULL) {
-        printf("%p\n", current->value);
+        printf("%p => %p\n", current->key, current->value);
         current = current->next;
     }
 
