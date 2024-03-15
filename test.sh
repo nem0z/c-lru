@@ -1,0 +1,1 @@
+./build.sh && valgrind -s ./a.out
